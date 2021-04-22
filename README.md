@@ -1,8 +1,6 @@
 # Fake_reviews_detection - NLP (Natural Language Processing)
 
 ## Introduction
-In the context of the Jedha Bootcamp Full Stack curriculum,
-this was our final project after an intensive 12 week Data Science Bootcamp.
 We found this subject interesting as current research has found that around 20% of the reviews on internet are estimated to be fake while online reviews influencing the purchase decisions for 93% of people.
 
 ## Objective and Motivations
