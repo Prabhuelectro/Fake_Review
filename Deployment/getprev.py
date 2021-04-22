@@ -40,14 +40,14 @@ tf.keras.losses.custom_loss = macro_soft_f1
 # Load Tools to preprocess and extract topics for function get_prev_full
 #---------------------------------------#
 #/content/Fake_reviews_detection/2_Deployment/model_files
-model = tf.keras.models.load_model('/content/Fake_reviews_detection/2_Deployment/model_files/tensorflow/model', custom_objects={'macro_soft_f1': macro_soft_f1, "F1Score": tfa.metrics.F1Score })
-preprocessor = load('/content/Fake_reviews_detection/2_Deployment/model_files/tensorflow/data_scaler.pkl')
-text_vectorizer = load('/content/Fake_reviews_detection/2_Deployment/model_files/tensorflow/text_vectorizer.pkl')
-topic_extractor = load('/content/Fake_reviews_detection/2_Deployment/model_files/tensorflow/topic_extractor.pkl')
+model = tf.keras.models.load_model('/content/Fake_Review/Deployment/model_files/tensorflow/model', custom_objects={'macro_soft_f1': macro_soft_f1, "F1Score": tfa.metrics.F1Score })
+preprocessor = load('/content/Fake_Review/Deployment/model_files/tensorflow/data_scaler.pkl')
+text_vectorizer = load('/content/Fake_Review/Deployment/model_files/tensorflow/text_vectorizer.pkl')
+topic_extractor = load('/content/Fake_Review/Deployment/model_files/tensorflow/topic_extractor.pkl')
 
-cleaner = load('/content/Fake_reviews_detection/2_Deployment/model_files/tensorflow/cleaner.pkl')
-expand_text = load('/content/Fake_reviews_detection/2_Deployment/model_files/tensorflow/expand_text.pkl')
-fix_fancy_words = load('/content/Fake_reviews_detection/2_Deployment/model_files/tensorflow/fix_fancy_words.pkl')
+cleaner = load('/content/Fake_Review/Deployment/model_files/tensorflow/cleaner.pkl')
+expand_text = load('/content/Fake_Review/Deployment/model_files/tensorflow/expand_text.pkl')
+fix_fancy_words = load('/content/Fake_Review/Deployment/model_files/tensorflow/fix_fancy_words.pkl')
 
 superlatifs = ['bon', 'bonne', 'bons', 'bonnes', 'meilleur', 'meilleure', 'meilleures',
 'mauvais', 'mauvaise', 'pire','petit', 'petite', 'moindre','plus', 'mieux', 'gros',
