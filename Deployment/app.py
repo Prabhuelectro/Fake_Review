@@ -14,9 +14,13 @@ Bootstrap(app)
 run_with_ngrok(app)   
 
 
+#@app.route("/")
+#def index():
+#    return render_template("index.html")
+
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("dashboard.html")
     
 @app.route("/", methods=['POST'])
 def get_prediction():
